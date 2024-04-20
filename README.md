@@ -73,6 +73,9 @@ python train.py
 ```
 
 ## File Structure and Description
+<details>
+<summary>Detail information</summary>
+
 1. **train.py**: This script facilitates the training and evaluation of the GCN model for node classification on the Cora dataset. It handles data loading, graph construction, model instantiation, training with validation, and evaluation on the test dataset.
 2. **models.py**: This file contains the definition of the Graph Convolutional Network (GCN) model used for node classification. It includes the architecture of the GCN, including the graph convolutional layers and the forward pass logic.
 3. **layer.py**: This file contains a GraphConvolution class that implements a graph convolution layer for neural networks, which applies a weight matrix to input features and propagates them using a graph's adjacency matrix.
@@ -83,6 +86,8 @@ python train.py
 7. **saved_models/**: This directory contains saved model weights obtained after training the GCN model. These weights can be loaded to reproduce or continue training from a specific checkpoint.
 8. **reports/**: This directory contains performance plots generated during training and evaluation, such as loss curves, accuracy curves, and confusion matrices. These plots help analyze the model's performance and identify any issues during training.
 9. **result/**: This directory contains result files generated after evaluating the model on the test dataset, such as predictions.tsv. These files provide insights into the model's predictions and can be used for further analysis or reporting.
+
+</details>
 
 ## Overview of the Approach:
 
