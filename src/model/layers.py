@@ -6,7 +6,8 @@ from torch.nn.modules.module import Module
 
 class GraphConvolution(Module):
     """
-    Simple GCN layer, similar to https://arxiv.org/abs/1609.02907
+    This implementation features a simple GCN layer, which is modeled after the architecture described 
+    in the seminal paper by Kipf & Welling (2016), available at https://arxiv.org/abs/1609.02907.
     """
 
     def __init__(self, in_features, out_features, bias=True):
