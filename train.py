@@ -29,7 +29,7 @@ def train():
     Results, including model predictions and performance plots, are saved for analysis.
 
     Returns:
-        None (outputs include saved models, performance plots, and terminal logs of training/validation metrics and settings, as well
+        It includes saved models, performance plots, and terminal logs of training/validation metrics and settings, as well
         as test evaluation results).
     """
 
@@ -47,7 +47,7 @@ def train():
     if args.cuda:
         torch.cuda.manual_seed(args.seed)
 
-    # Load data
+    # Load the data
     adj, features, labels, idx_train, idx_val, idx_test, paper_ids_test, inverted_label_mapping = load_data()
 
     # Combine train and validation indices to apply apply 10 fold cross validation
