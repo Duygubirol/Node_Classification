@@ -1,9 +1,13 @@
 # Node Classification with  Graph Convolution Network (GCN) on Cora Dataset
 ## Stratified Split with 10-fold cross validation 
 
-This repository contains the implementation of Graph Convolutional Networks (GCN) in PyTorch for node classification on Cora dataset, developed by Duygu Ekinci Birol.
-It includes a training of a model to predict the class or label of a node, commonly known as node classification. 
+This repository has been created as part of the application for the Data Science Junior Research Group at Paderborn University (reference 6368). The project is developed by Duygu Ekinci Birol and focuses on the implementation of Graph Convolutional Networks (GCN) using PyTorch. The primary application of this repository is for node classification on the Cora dataset.
 
+### Project Overview
+
+- **Objective**: Train a GCN model to predict the class or label of a node.
+- **Dataset**: Cora dataset, a commonly used benchmark in graph machine learning.
+- **Technologies**: Python, PyTorch, Graph Convolutional Networks.
 
 ### Installation
 Before installing the package, ensure you are using **Python 3.10**. This is necessary to maintain compatibility with the project's dependencies.
@@ -40,14 +44,13 @@ pip install --upgrade pip
 ```
 
 4. Install the package:
-This step installs the package along with all its Python dependencies as specified in the setup.py file.
-```bash
-pip install .
-```
-
-Alternatively, dependencies can be installed using the requirements.txt file:
+This step installs the package along with all its Python dependencies as specified in the requirements.txt file:
 ```bash
 pip install -r requirements.txt
+```
+Alternatively, dependencies can be installed using the setup.py file.
+```bash
+pip install .
 ```
 
 ### Dependencies
@@ -95,7 +98,7 @@ python train.py
 <details>
 <summary>Detail information</summary>
 
-The Cora dataset, which can be downloaded from the provided link (https://linqs-data.soe.ucsc.edu/public/lbc/cora.), is a collection of academic publications represented as nodes in a graphintroduced by Yang et al. (2016) [1]. Each publication is connected to others through citations, forming links or edges between them. Because all nodes in the Cora dataset represent the same type of entity (research papers) and all edges represent the same type of relationship (citations), the dataset is considered homogeneous. This homogeneity simplifies the modeling process and allows for the application of techniques like graph convolutional networks (GCNs) to analyze and make predictions on the dataset.
+The Cora dataset, which can be downloaded from the provided link (https://linqs-data.soe.ucsc.edu/public/lbc/cora.), is a collection of academic publications represented as nodes in a graph introduced by Yang et al. (2016) [1]. Each publication is connected to others through citations, forming links or edges between them. Because all nodes in the Cora dataset represent the same type of entity (research papers) and all edges represent the same type of relationship (citations), the dataset is considered homogeneous. This homogeneity simplifies the modeling process and allows for the application of techniques like graph convolutional networks (GCNs) to analyze and make predictions on the dataset.
 
 The nodes in the Cora dataset are categorized into seven subjects: "Case_Based", "Genetic_Algorithms", "Neural_Networks", "Probabilistic_Methods", "Reinforcement_Learning", "Rule_Learning", and "Theory". These subjects represent different fields or topics of study within academia.
 
@@ -147,17 +150,17 @@ The training involves:
 ### Results
 <details>
 <summary>Detail information</summary>
-After training and validating the GCN across 10 folds of cross-validation on the Cora dataset, the model demonstrated robust performance. Below are the summarized outcomes of the model's accuracy:
+After training and validating the GCN across 10 fold of cross-validation on the Cora dataset, the model demonstrated robust performance. Below are the summarized outcomes of the model's accuracy:
 
 Training and Validation Performance:
 
-**Mean Training Accuracy:** 0.9272 ± 0.0072
+**Mean Training Accuracy**: 0.9272 ± 0.0072
 
-**Mean Validation Accuracy:**0.8637 ± 0.0211
+**Mean Validation Accuracy**: 0.8637 ± 0.0211
 
 These results represent the average performance across all 10 folds, showcasing the model's ability to generalize across different subsets of the data.
 
-**Final Model Evaluation with the best model:**
+**Final Model Evaluation with the best model**:
 
 Test Accuracy: 0.8782
 
