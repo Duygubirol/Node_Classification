@@ -128,7 +128,6 @@ def encode_onehot(labels, label_mapping):
     return labels_onehot
 
 
-# Normalization is required for convolution-based neural networks
 def normalize(mx):
     """
     Normalize a sparse matrix row-wise.
@@ -171,8 +170,8 @@ def parse_arguments():
     command line options such as disabling CUDA, setting training parameters like learning rate and epochs, and others. Defaults are 
     set based on preliminary guidelines from relevant literature, with further adjustments planned based on additional articles.
 
-    Note: The choice of default parameter values will later be substantiated with specific references to relevant articles in the field.
-
+    Note:The choice of default parameter values is obtained from this reference article: https://doi.org/10.48550/arXiv.1609.02907 
+    
     Returns:
         argparse.Namespace: An object containing the command line arguments and their values.
     """
