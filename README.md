@@ -13,12 +13,12 @@ To install the package and its dependencies, you can use the following steps:
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/Duygubirol/Node-Classification-Duygu-Ekinci-Birol.git
+git clone https://github.com/Duygubirol/Node_Classification
 ```
 
 2. Navigate to the project directory:
 ```bash
-cd Node-Classification-Duygu-Ekinci-Birol
+cd Node_Classification
 ```
 
 3. Set up a Python environment (recommended):
