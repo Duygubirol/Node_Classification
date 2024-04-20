@@ -146,12 +146,13 @@ After training and validating the GCN across 10 folds of cross-validation on the
 
 Training and Validation Performance:
 
-Mean Training Accuracy: 0.9272 ± 0.0072
-Mean Validation Accuracy: 0.8637 ± 0.0211
+**Mean Training Accuracy:** 0.9272 ± 0.0072
+
+**Mean Validation Accuracy:**0.8637 ± 0.0211
 
 These results represent the average performance across all 10 folds, showcasing the model's ability to generalize across different subsets of the data.
 
-Final Model Evaluation:
+**Final Model Evaluation with the best model:**
 
 Test Accuracy: 0.8782
 
