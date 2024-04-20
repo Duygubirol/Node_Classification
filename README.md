@@ -144,14 +144,17 @@ The training involves:
 <summary>Detail information</summary>
 After training and validating the GCN across 10 folds of cross-validation on the Cora dataset, the model demonstrated robust performance. Below are the summarized outcomes of the model's accuracy:
 
-Training and Validation Performance
+Training and Validation Performance:
+
 Mean Training Accuracy: 0.9272 ± 0.0072
 Mean Validation Accuracy: 0.8637 ± 0.0211
 
 These results represent the average performance across all 10 folds, showcasing the model's ability to generalize across different subsets of the data.
 
-Final Model Evaluation
+Final Model Evaluation:
+
 Test Accuracy: 0.8782
+
 The test accuracy indicates the effectiveness of the model when applied to unseen data, providing a realistic measure of its predictive power in practical scenarios.
 This approach not only adds valuable insights about the model's 
 
